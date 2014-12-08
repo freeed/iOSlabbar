@@ -15,6 +15,7 @@
 		7699B0F91A35CD61006C425C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7699B0F81A35CD61006C425C /* Images.xcassets */; };
 		7699B0FC1A35CD61006C425C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7699B0FA1A35CD61006C425C /* LaunchScreen.xib */; };
 		7699B1081A35CD61006C425C /* Laboration5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7699B1071A35CD61006C425C /* Laboration5Tests.m */; };
+		7699B1121A35D318006C425C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7699B1111A35D318006C425C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		7699B1011A35CD61006C425C /* Laboration5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Laboration5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7699B1061A35CD61006C425C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7699B1071A35CD61006C425C /* Laboration5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Laboration5Tests.m; sourceTree = "<group>"; };
+		7699B1111A35D318006C425C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7699B1121A35D318006C425C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,7 @@
 		7699B0E81A35CD61006C425C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7699B1111A35D318006C425C /* MapKit.framework */,
 				7699B0E91A35CD61006C425C /* Info.plist */,
 				7699B0EA1A35CD61006C425C /* main.m */,
 			);
@@ -171,6 +175,11 @@
 				TargetAttributes = {
 					7699B0E41A35CD61006C425C = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7699B1001A35CD61006C425C = {
 						CreatedOnToolsVersion = 6.1;
@@ -416,6 +425,7 @@
 				7699B10D1A35CD61006C425C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7699B10E1A35CD61006C425C /* Build configuration list for PBXNativeTarget "Laboration5Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +434,7 @@
 				7699B1101A35CD61006C425C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
